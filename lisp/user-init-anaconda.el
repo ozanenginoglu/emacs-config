@@ -18,6 +18,9 @@
 ;; (add-hook 'python-mode-hook 'eldoc-mode)
 (add-hook 'python-mode-hook #'(lambda ()
                                (add-to-list 'company-backends 'company-anaconda)))
+
+
+
 (message "config anaconda")
 (provide 'user-init-anaconda)
 ;;; user-init-anaconda.el ends here

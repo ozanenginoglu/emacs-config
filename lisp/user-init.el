@@ -4,7 +4,7 @@
 ;;; Commentary:
 ;; 
 
-(require 'user-init-config)
+;;(require 'user-init-config)
 (require 'user-init-default)
 (require 'user-init-packages)
 (require 'user-init-auto-complete)
@@ -22,7 +22,7 @@
 ;;(require 'user-init-global)
 ;;(require 'user-init-flyspell)
 ;;(require 'user-init-company)
-(require 'user-init-anaconda)
+;;(require 'user-init-anaconda)
 ;;(require 'user-init-web-mode)
 ;;(require 'user-init-js2-mode)
 ;;(require 'user-init-jedi)
@@ -31,7 +31,7 @@
 ;;(require 'user-init-octave-mode)
 ;;(require 'user-init-slime)
 ;;(require 'user-init-haskell-mode)
-;;(require 'user-init-paths)
+(require 'user-init-paths)
 ;;(require 'user-init-custom)
 ;;(require 'user-init-projectile)
 ;;(require 'user-init-development)

@@ -2,10 +2,30 @@
 ;;; Commentary:
 ;; 
 
-;;; Code:
-;;;;;;;;;;;;;;;;;;;;;;;;
-;; Dependent packages ;;
-;;;;;;;;;;;;;;;;;;;;;;;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Dependent el-get recipes ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(defvar user-recipes '(
+                       ;; edts
+                       ;; distel
+                       ))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Erlang configurations ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; erlang root directory that will be used
+;; erlang-mode will be also used from this distrubition
+(defvar erlang-root-dir "/usr/local/opt/erlang/lib/erlang")
+
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Lisp configurations ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Configuration uses slime-helper to connect to slime
+;; if you are not using it. you can just leave it as it is.
+(defvar slime-helper-path
+  (expand-file-name "~/quicklisp/slime-helper.el"))
+;; path for lisp implementation you want to use.
+(defvar inferior-lisp-path "sbcl")
 
 
 ;; (setenv "PATH" (concat "/usr/local/bin:"
@@ -18,14 +38,13 @@
     "/usr/local/bin"
     "/usr/local/sbin"
     "/usr/local/share/python"
-    "/opt/local/bin"
     )
   )
 
 
-;;(defvar user-init-python-paths
-;;  '("/opt/local/Library/Frameworks/Python.framework/Versions/3.4/lib/python3.4/site-packages")
-;;  )
+(defvar user-init-python-paths
+  '("/anaconda/bin")
+  )
 
 (message "load configuration")
 (provide 'user-init-config)

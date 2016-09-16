@@ -9,6 +9,8 @@
 	  #'(lambda ()
 	      (require 'auto-complete-config)
 	      (ac-config-default)))
+
+
 (message "config auto-complete")
 (provide 'user-init-auto-complete)
 
