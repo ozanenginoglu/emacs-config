@@ -15,7 +15,7 @@
 (require 'user-init-theme)
 ;;(require 'user-init-org)
 ;;(require 'user-init-org2blog)
-;;(require 'user-init-helm)
+(require 'user-init-helm)
 (require 'user-init-ace-jump-mode)
 
 
